@@ -480,6 +480,8 @@ how that information is getting to the program.  In this case, we "hard coded" t
 
 Take time to discuss how the factory can be advantageous, along with the solution in general. How does it different from yours? Are there good things about it? Are there bad things about it? (It isn't perfect!)
 
+The factory is the example of how to use abstraction and encapsulation in OOP, 
+
 ## Final Thoughts
 
 Design takes time and practice, which can be difficult while learning a new language. It is alright to struggle! It is alright to not get it right the first time. It is alright to have to refactor your code. What is most important right now is to give yourself permission to struggle, and **time** to learn (which means don't wait until the last minute to do things). 
