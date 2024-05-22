@@ -56,7 +56,8 @@ Realistically, these two terms always go hand in hand. While inheritance is abou
 ### 👉🏽 Discussion
 
 Why would this be the case? Can you think of any examples where inheritance is used but it would not be polymorphic?
-
+- When the subclass wants only to reuse the method from the superclass without modifying the original function.
+- In order to take advantage of inheritance, polymorphism is necessary. We can use the same interface to respond to different situations.
 ### Example of (Good or Bad?) Inheritance
 
 Let's take the following UML diagram. 
