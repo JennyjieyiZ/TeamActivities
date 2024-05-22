@@ -46,6 +46,8 @@ He emphasis that the main concept in OOP is not the objects, but the idea that m
 This makes objects "nouns" and methods "verbs" - with the emphasis on the verb. Sure you have an object that contains information, but the verbs tell it do something with that information. 
 
 👉🏽 Take a moment to discuss this concept as a team. What does it mean to you? How does it change your perspective on OOP?
+- Objects as Cells.Classes as Species.Based on Classes, we can declare Objects as entities.
+- Polymorphism is similar to  Biological Diversity: different species exhibiting different behaviors. In oop,different class can fullfill/response to one method in different ways
 
 ## Inheritance and Polymorphism - Is-A
 Realistically, these two terms always go hand in hand. While inheritance is about reusing code and keeping your code DRY (Don't Repeat Yourself), good inheritance focuses on keeping the code polymorphic. 
