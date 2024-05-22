@@ -355,6 +355,7 @@ or make it a List of the type, which is List<Animal> for example.
 >     Companion --> "*" Trick
 >     class Animal {
 >       - taxonomy: Taxonomy
+>       - sound: String
 >     }
 >     class Companion {
 >       - tricks : List~Trick~
