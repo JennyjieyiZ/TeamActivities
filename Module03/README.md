@@ -361,6 +361,9 @@ or make it a List of the type, which is List<Animal> for example.
 >     }
 >     class Companion {
 >       - tricks : List~Trick~
+>     - name: String
+>     -maxTricks: int
+>     +addTrick(Trick):boolean
 >     }
 > ```
 
