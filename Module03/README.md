@@ -157,6 +157,8 @@ public void circleOnly(Circle circle) {
 ### 👉🏽 Discussion
 That is a lot! Go ahead and discuss. How does this change your perspective on inheritance?
 
+This example show that both `Circle` and `Rectangle` can be treated as `Shape`, which is an advantage of using inheritance and polymorphism. However, the use of inheritance needs to be carefully considered so that extending the system (adding new shapes) does not destroy existing functionality.
+
 > [!TIP] 
 > A major take away, when designing code your parameter should be the 
 > the most "generic" (highest parent in the tree) type that you can use. 
