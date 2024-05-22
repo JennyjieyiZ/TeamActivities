@@ -99,6 +99,8 @@ classDiagram
 ```
 👉🏽 Discuss the UML diagram. Is it an example of good or bad inheritance, why or why not? 
 
+- This is not a good inheritance: The shape class is an abstract class with subclasses Rectangle, Box, and Circle. Each class has methods like draw, getArea and resize. All classes implement the `getArea` and `resize` methods. This is consistent and adheres to the expectation that all shapes should be able to compute their area and be resized. However, The `Box` class seems to inherit directly from `Shape`, but the naming and its similarity to `Rectangle` is confusing. It can inherit from `Rectangle`. And also, the `draw` method in `Rectangle` is different from the `shape` class.
+
 Believe it or not, this is a common design, but in practice it actually breaks one of the "rules" (more like guidelines) that programmers should follow. It is known as the Liskov Substitution Principle. 
 
 > [!NOTE] 
