@@ -216,7 +216,8 @@ This "magic" of polymorphism is what makes OOP so powerful, as long we stick to 
 
 ### 👉🏽 Discussion
 Take time to explain the concepts to each other. What other questions come up as you discuss this? 
-
+- Interfaces like rules or models.We can modify different versions based on this model.
+- others question: what kind of situations should we use interfaces
 ## :computer: Refactoring 
 
 Let's practice! One of the more difficult but often best ways to learn design is by refracting (rewriting) code. This is often best if you practice with your own code, as you seek to improve it in the future. However, it is good (and sadly common in industry) for someone to have to refractor someone else's code. 
