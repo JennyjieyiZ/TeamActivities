@@ -331,6 +331,44 @@ List<Book> sortedBooks = books.stream().sorted().collect(Collectors.toList());
 
 Take a moment to discuss the various methods you wrote verse the stream functionality. What are the advantages and disadvantages of each? Can you think of other ways to test / apply the functionality. For example, maybe write a filter (see the first example) that filters the books that were published after 1950. Or write a filter that only takes odd numbers, but then adds (reduce) those odd numbers together. This last one combines the various methods you have learned so far, and you can 'chain' them together. We encourage you to work as a team to figure it out. 
 
+```java
+
+import java.util.List;
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
+public class StreamFilterBooks {
+    public static void main(String[] args) {
+        List<String> bookStrings = Arrays.asList(
+            "The Great Gatsby,F. Scott Fitzgerald,1925",
+            "To Kill a Mockingbird,Harper Lee,1960",
+            "1984,George Orwell,1949",
+            "The Catcher in the Rye,J.D. Salinger,1951",
+            "Beloved,Toni Morrison,1987"
+        );
+        List<Book> books = bookStrings.stream().map(Book::createFromString).collect(Collectors.toList());
+        List<Book> booksAfter1950 = books.stream().filter(book -> book.getYear() > 1950).collect(Collectors.toList());
+        booksAfter1950.forEach(book -> System.out.println(book.getTitle() + " by " + book.getAuthor() + " (" + book.getYear() + ")"));
+    }
+}
+
+```
+
+```java
+import java.util.List;
+import java.util.Arrays;
+
+public class StreamFilterAndReduce {
+    public static void main(String[] args) {
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        int sumOfOdds = numbers.stream()
+                               .filter(n -> n % 2 != 0)
+                               .reduce(0, Integer::sum);
+        System.out.println("Sum of odd numbers: " + sumOfOdds);
+    }
+}
+```
+
 Do you have to be an expert in Streams? No, not at all! But it does help to know what to look for to better understand the tools you have for the situation!
 
 
