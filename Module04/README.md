@@ -128,6 +128,9 @@ This run may take over a minute or so, so give it time.
 👉🏽 DISCUSS the results! 
 
 A powerful concept is that if your entire program uses List, you often only have one spot to change the class, and a simple change between ArrayList and LinkedList can make a big difference depending on what you are trying to do. 
+- For random access, the ArrayList is faster than LinkedList
+- For insertion, LinkedList is faster than ArrayList
+- In general, ArrayListis suitable for the number of elements does not change much and frequent random access is required.And LinkedList is suitable forthe number of elements frequently frequent insertions and deletions.
 
 ## Streams
 Introduced in Java 8, the Stream object is a powerful way to manipulate data structures. It is a way to process data in a functional way, and can be used to filter, sort, map, and reduce data. Modern languages will often start with streams as part of their data structures, but due to java's history it wasn't added until a bit later in the design. 
