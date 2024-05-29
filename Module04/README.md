@@ -226,7 +226,15 @@ List<Integer> squared = integers.stream().map(n -> n * n).collect(Collectors.toL
 Notice that the map takes a function (technically called a lambda function) that takes in a single value and returns a single value *for each* value in the list. It then collects the results back into a list.
 
 :fire: Task - Write a method that does the same thing. It (a) takes in a list of Integers, and (b) returns a list of the squares of the list.
-
+```java
+  public static List<Integer> squared(List<Integer> numbers) {
+        List<Integer> squared = new ArrayList<>();
+        for (int i = 0; i < numbers.size(); i++) {
+            squared.add(numbers.get(i) * numbers.get(i));
+        }
+        return squared;
+    }
+```
 #### A bit harder examples
 
 A key idea about map, is that the built list can be any time. So let's say you have a list of strings, and you want to convert the information into a new data class. 
@@ -282,7 +290,16 @@ List<Book> books = bookStrings.stream().map(Book::createFromString).collect(Coll
 The above code is a bit more complex, but it shows how you can use the map function to convert one type of object into another across an entire set of objects. 
 
 :fire: Task - Write a method that does the same thing. It (a) takes in a list of Strings, and (b) returns a list of Book objects. You can use [Book.java](Book.java) provided with this team activity. 
-
+```java
+public static List<Book> listToBooks(List<String> bookStrings) {
+        List<Book> books = new ArrayList<>();
+        for (int i = 0; i < bookStrings.size(); i++) {
+            Book tmp = Book.createFromString(bookStrings.get(i));
+            books.add(tmp);
+        }
+        return books;
+    }
+```
 
 > [!TIP]
 > The createFromString method is a factory method similar to what you saw in Module 03. In this
