@@ -206,8 +206,15 @@ Integer sum = integers.stream().reduce(0, (a, b) -> a + b);
 ```
 
 :fire: Task - Write a method that does the same thing. It (a) takes in a list of Integers, and (b) returns the sum of the list.
-
-
+```java
+public static int sum(List<Integer> numbers) {
+        int sum = 0;
+        for (int i = 0; i < numbers.size(); i++) {
+            sum += numbers.get(i);
+        }
+        return sum;
+    }
+```
 ### :fire: Task: Map
 
 The following code is an example of using a stream to "map" the results into a new set of items.
