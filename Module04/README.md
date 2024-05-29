@@ -83,8 +83,8 @@ For a comparison between Python and Java, dictionaries are like maps, lists are 
 
 ### 👉🏽 Discussion
 Thinking back to your 5001 class, what were some cases to use a List or Dictionary in Python? The Collections framework is a bit more detailed in giving you more control of the underlying data structure, but the fundamentals are similar. 
-In Python, list is a ordered collection of values that are grouped together under a single variable name. We know that programming languages are meant to be intuitive, so think of a Python list like any other kind of a list: to-do list, grocery list, enemies list, etc. When we create a list, it is one variable with multiple items; every item has a value as well as a position within the list. Lists are orders, mutable, and can contain duplicate values.
-Python Dictionary is an unordered collection of data values. Dictionaries are unordered and mutable but they cannot contain duplicate keys.
+* In Python, list is a ordered collection of values that are grouped together under a single variable name. We know that programming languages are meant to be intuitive, so think of a Python list like any other kind of a list: to-do list, grocery list, enemies list, etc. When we create a list, it is one variable with multiple items; every item has a value as well as a position within the list. Lists are orders, mutable, and can contain duplicate values.
+* Python Dictionary is an unordered collection of data values. Dictionaries are unordered and mutable but they cannot contain duplicate keys.
 
 
 <!-- Links -->
