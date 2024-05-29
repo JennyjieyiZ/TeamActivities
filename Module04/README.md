@@ -322,7 +322,10 @@ System.out.println(sorted);
 The above code will sort the list of integers. However, as a group discuss what would happen if you tried to sort a list of Book objects. 
 
 :fire: Task - Go ahead and write code that sorts the books. Since comparable is implemented, you can use code similar to the above to sort the books. You do not have to write your own sort.
-
+```java
+List<Book> sortedBooks = books.stream().sorted().collect(Collectors.toList());
+        System.out.println(sortedBooks);
+```
 
 ## 👉🏽  Discussion
 
